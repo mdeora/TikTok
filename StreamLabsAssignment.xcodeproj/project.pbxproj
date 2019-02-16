@@ -26,6 +26,10 @@
 		79B2063222185E76006EC4AE /* ProgressIndicatorHUDPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2063122185E76006EC4AE /* ProgressIndicatorHUDPresenter.swift */; };
 		79B2063522185EC6006EC4AE /* ProgressIndicatorHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2063322185EC6006EC4AE /* ProgressIndicatorHUDView.swift */; };
 		79B2063622185EC6006EC4AE /* ProgressIndicatorHUDMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2063422185EC6006EC4AE /* ProgressIndicatorHUDMessageView.swift */; };
+		79B2063822187B94006EC4AE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2063722187B94006EC4AE /* ProfileViewController.swift */; };
+		79B2063A22187C49006EC4AE /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2063922187C49006EC4AE /* CircleImageView.swift */; };
+		79B2063C22188419006EC4AE /* RoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2063B22188419006EC4AE /* RoundCornerButton.swift */; };
+		79B2063E2218871C006EC4AE /* ProfileItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2063D2218871C006EC4AE /* ProfileItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		79B2063122185E76006EC4AE /* ProgressIndicatorHUDPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorHUDPresenter.swift; sourceTree = "<group>"; };
 		79B2063322185EC6006EC4AE /* ProgressIndicatorHUDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorHUDView.swift; sourceTree = "<group>"; };
 		79B2063422185EC6006EC4AE /* ProgressIndicatorHUDMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorHUDMessageView.swift; sourceTree = "<group>"; };
+		79B2063722187B94006EC4AE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		79B2063922187C49006EC4AE /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		79B2063B22188419006EC4AE /* RoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerButton.swift; sourceTree = "<group>"; };
+		79B2063D2218871C006EC4AE /* ProfileItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		9470DE86FD8C8C6523E12443 /* Pods_StreamLabsAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamLabsAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9820A1A6C55DE798B8C480 /* Pods-StreamLabsAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamLabsAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamLabsAssignment/Pods-StreamLabsAssignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +148,7 @@
 			children = (
 				79B2060B22183CD6006EC4AE /* FeedViewController.swift */,
 				79B2060722183CC7006EC4AE /* FeedPageViewController.swift */,
+				79B2063722187B94006EC4AE /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +180,9 @@
 				79B2063422185EC6006EC4AE /* ProgressIndicatorHUDMessageView.swift */,
 				79B2063322185EC6006EC4AE /* ProgressIndicatorHUDView.swift */,
 				79B2060922183CCF006EC4AE /* FeedPagePresenter.swift */,
+				79B2063922187C49006EC4AE /* CircleImageView.swift */,
+				79B2063B22188419006EC4AE /* RoundCornerButton.swift */,
+				79B2063D2218871C006EC4AE /* ProfileItemCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,11 +323,15 @@
 				79B2063522185EC6006EC4AE /* ProgressIndicatorHUDView.swift in Sources */,
 				79B2062822183FB4006EC4AE /* Feed.swift in Sources */,
 				79B2061C22183CE6006EC4AE /* Connection.swift in Sources */,
+				79B2063A22187C49006EC4AE /* CircleImageView.swift in Sources */,
+				79B2063822187B94006EC4AE /* ProfileViewController.swift in Sources */,
 				79B2062222183DB0006EC4AE /* AppDelegate.swift in Sources */,
+				79B2063C22188419006EC4AE /* RoundCornerButton.swift in Sources */,
 				79B2063622185EC6006EC4AE /* ProgressIndicatorHUDMessageView.swift in Sources */,
 				79B2061922183CE6006EC4AE /* InteractionUtil.swift in Sources */,
 				79B2060622183CBF006EC4AE /* FeedFetchService.swift in Sources */,
 				79B2060C22183CD6006EC4AE /* FeedViewController.swift in Sources */,
+				79B2063E2218871C006EC4AE /* ProfileItemCollectionViewCell.swift in Sources */,
 				79B2061522183CE6006EC4AE /* StoryboardScene.swift in Sources */,
 				79B2060822183CC7006EC4AE /* FeedPageViewController.swift in Sources */,
 				79B2063222185E76006EC4AE /* ProgressIndicatorHUDPresenter.swift in Sources */,
@@ -451,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SAZBNJXNJ;
 				INFOPLIST_FILE = StreamLabsAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,6 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SAZBNJXNJ;
 				INFOPLIST_FILE = StreamLabsAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
