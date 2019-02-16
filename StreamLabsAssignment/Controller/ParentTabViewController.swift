@@ -36,11 +36,11 @@ class ParentTabViewController: UITabBarController {
     
     @objc fileprivate func action(sender: UIButton) {
         print("test")
-//         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        if let cameraController = storyboard.instantiateViewController(withIdentifier: "CameraViewController") as? CameraViewController {
-//            self.present(cameraController, animated: true)
-//        }
-//
+         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let cameraController = storyboard.instantiateViewController(withIdentifier: "CameraViewController") as? CameraViewController {
+            self.present(cameraController, animated: true)
+        }
+
         
     }
     

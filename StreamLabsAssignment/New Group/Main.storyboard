@@ -128,17 +128,62 @@
         <scene sceneID="vSd-1N-fme">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73N-AW-FKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="nXo-bK-UbV" customClass="CameraViewController" customModule="StreamLabsAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraViewController" id="nXo-bK-UbV" customClass="CameraViewController" customModule="StreamLabsAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="biw-nk-6rW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffi-aw-GSA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZJ-hT-Ia5">
+                                        <rect key="frame" x="315" y="20" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="EBQ-xI-6Qk"/>
+                                            <constraint firstAttribute="width" constant="40" id="TSg-CL-ZPb"/>
+                                        </constraints>
+                                        <state key="normal" image="cancel"/>
+                                        <connections>
+                                            <action selector="closeTapped:" destination="nXo-bK-UbV" eventType="touchUpInside" id="1Ev-cw-kKr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw7-xU-GDz">
+                                        <rect key="frame" x="171.5" y="595" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="NVU-iK-ica"/>
+                                            <constraint firstAttribute="width" constant="32" id="lO6-kz-nXQ"/>
+                                        </constraints>
+                                        <state key="normal" image="camera"/>
+                                        <connections>
+                                            <action selector="videoTapped:" destination="nXo-bK-UbV" eventType="touchUpInside" id="T4o-Cu-jvb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lw7-xU-GDz" firstAttribute="centerX" secondItem="Ffi-aw-GSA" secondAttribute="centerX" id="ONg-w6-RO3"/>
+                                    <constraint firstItem="NZJ-hT-Ia5" firstAttribute="top" secondItem="Ffi-aw-GSA" secondAttribute="top" constant="20" id="Upy-Wq-vIO"/>
+                                    <constraint firstAttribute="trailing" secondItem="NZJ-hT-Ia5" secondAttribute="trailing" constant="20" id="dwR-F5-Fqk"/>
+                                    <constraint firstAttribute="bottom" secondItem="lw7-xU-GDz" secondAttribute="bottom" constant="20" id="sYK-bU-Jri"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pP2-AX-jYK" firstAttribute="trailing" secondItem="Ffi-aw-GSA" secondAttribute="trailing" id="2vI-vR-Jrs"/>
+                            <constraint firstItem="Ffi-aw-GSA" firstAttribute="leading" secondItem="pP2-AX-jYK" secondAttribute="leading" id="SBm-Yf-UV6"/>
+                            <constraint firstItem="pP2-AX-jYK" firstAttribute="bottom" secondItem="Ffi-aw-GSA" secondAttribute="bottom" id="Vsc-bF-R0r"/>
+                            <constraint firstItem="Ffi-aw-GSA" firstAttribute="top" secondItem="pP2-AX-jYK" secondAttribute="top" id="zla-E5-H9B"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pP2-AX-jYK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="add" id="0je-Gn-DXx"/>
+                    <connections>
+                        <outlet property="cameraUIView" destination="Ffi-aw-GSA" id="JKI-Vq-rwm"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1294" y="161"/>
+            <point key="canvasLocation" x="1293.5999999999999" y="160.56971514242881"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="DbD-Et-rlO">
@@ -336,6 +381,8 @@
     </scenes>
     <resources>
         <image name="add" width="16" height="16"/>
+        <image name="camera" width="48" height="48"/>
+        <image name="cancel" width="229" height="229"/>
         <image name="comment" width="24" height="24"/>
         <image name="home" width="24" height="24"/>
         <image name="hulk" width="640" height="640"/>
