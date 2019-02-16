@@ -32,7 +32,7 @@ These instructions will get you a copy of the project up and running on your loc
  * Clean/Build project to be sure everything is set and you're good to go.
 
 
-### Product & Technical Dcisions 
+### Product & Technical Decisions 
 
 -This application makes use of the MVP architecture for its main functionality. The three components of the MVP pattern communicate to each other through clearly defined interfaces. this makes updates and enhancements much easier through out the application cycle.
 
