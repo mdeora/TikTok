@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB9103204CA0AA6C96F1EC0 /* Pods_StreamLabsAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9470DE86FD8C8C6523E12443 /* Pods_StreamLabsAssignment.framework */; };
 		792AB5E3221803F2006401EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AB5E2221803F2006401EE /* AppDelegate.swift */; };
 		792AB5E5221803F2006401EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AB5E4221803F2006401EE /* ViewController.swift */; };
 		792AB5E8221803F2006401EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792AB5E6221803F2006401EE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092C399E520401BAFBB63F7B /* Pods-StreamLabsAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamLabsAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamLabsAssignment/Pods-StreamLabsAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		792AB5DF221803F2006401EE /* StreamLabsAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamLabsAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		792AB5E2221803F2006401EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		792AB5E4221803F2006401EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		792AB5E9221803F4006401EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		792AB5EC221803F4006401EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		792AB5EE221803F4006401EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9470DE86FD8C8C6523E12443 /* Pods_StreamLabsAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamLabsAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9820A1A6C55DE798B8C480 /* Pods-StreamLabsAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamLabsAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamLabsAssignment/Pods-StreamLabsAssignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB9103204CA0AA6C96F1EC0 /* Pods_StreamLabsAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				792AB5E1221803F2006401EE /* StreamLabsAssignment */,
 				792AB5E0221803F2006401EE /* Products */,
+				B3B70FB2D356DB61E87958B9 /* Pods */,
+				BBEFEC6754DA55EF1DD5B007 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +61,87 @@
 		792AB5E1221803F2006401EE /* StreamLabsAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				792AB5E2221803F2006401EE /* AppDelegate.swift */,
-				792AB5E4221803F2006401EE /* ViewController.swift */,
-				792AB5E6221803F2006401EE /* Main.storyboard */,
-				792AB5E9221803F4006401EE /* Assets.xcassets */,
-				792AB5EB221803F4006401EE /* LaunchScreen.storyboard */,
 				792AB5EE221803F4006401EE /* Info.plist */,
+				792AB5E4221803F2006401EE /* ViewController.swift */,
+				792AB5F922180E59006401EE /* Base */,
+				792AB5F722180E3D006401EE /* Extension */,
+				792AB5F422180E29006401EE /* Model */,
+				792AB5F622180E39006401EE /* Service */,
+				792AB5F822180E48006401EE /* Storyboard */,
+				792AB5FA22180E80006401EE /* SupportingFiles */,
+				792AB5F522180E34006401EE /* View */,
 			);
 			path = StreamLabsAssignment;
+			sourceTree = "<group>";
+		};
+		792AB5F422180E29006401EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		792AB5F522180E34006401EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		792AB5F622180E39006401EE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		792AB5F722180E3D006401EE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		792AB5F822180E48006401EE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				792AB5E6221803F2006401EE /* Main.storyboard */,
+				792AB5EB221803F4006401EE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		792AB5F922180E59006401EE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				792AB5E2221803F2006401EE /* AppDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		792AB5FA22180E80006401EE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				792AB5E9221803F4006401EE /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B3B70FB2D356DB61E87958B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				092C399E520401BAFBB63F7B /* Pods-StreamLabsAssignment.debug.xcconfig */,
+				EC9820A1A6C55DE798B8C480 /* Pods-StreamLabsAssignment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBEFEC6754DA55EF1DD5B007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9470DE86FD8C8C6523E12443 /* Pods_StreamLabsAssignment.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 792AB5F1221803F4006401EE /* Build configuration list for PBXNativeTarget "StreamLabsAssignment" */;
 			buildPhases = (
+				0F1DC0281DD59694243C3323 /* [CP] Check Pods Manifest.lock */,
 				792AB5DB221803F2006401EE /* Sources */,
 				792AB5DC221803F2006401EE /* Frameworks */,
 				792AB5DD221803F2006401EE /* Resources */,
+				F34E91C27D2B1148ABFF8057 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +211,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F1DC0281DD59694243C3323 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StreamLabsAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F34E91C27D2B1148ABFF8057 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StreamLabsAssignment/Pods-StreamLabsAssignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StreamLabsAssignment/Pods-StreamLabsAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		792AB5DB221803F2006401EE /* Sources */ = {
@@ -280,6 +405,7 @@
 		};
 		792AB5F2221803F4006401EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092C399E520401BAFBB63F7B /* Pods-StreamLabsAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +424,7 @@
 		};
 		792AB5F3221803F4006401EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC9820A1A6C55DE798B8C480 /* Pods-StreamLabsAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
