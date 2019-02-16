@@ -35,14 +35,21 @@ class ParentTabViewController: UITabBarController {
     
     
     @objc fileprivate func action(sender: UIButton) {
-        print("test")
          let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let cameraController = storyboard.instantiateViewController(withIdentifier: "CameraViewController") as? CameraViewController {
             self.present(cameraController, animated: true)
         }
-
-        
     }
     
-
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if tabBar.selectedItem == tabBar.items![2] as UITabBarItem {
+            let commentController = CommentViewController()
+            commentController.modalPresentationStyle = .custom
+            present(commentController, animated: true, completion: nil)
+        }
+    }
+    
 }
+
+
+

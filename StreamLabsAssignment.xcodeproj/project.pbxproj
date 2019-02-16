@@ -34,6 +34,8 @@
 		79B2064222189453006EC4AE /* ParentTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2064122189453006EC4AE /* ParentTabViewController.swift */; };
 		79B2064422189B4E006EC4AE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2064322189B4E006EC4AE /* SearchViewController.swift */; };
 		79B206472218A1E1006EC4AE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B206462218A1E1006EC4AE /* UIViewController+Extension.swift */; };
+		79B2064B2218B797006EC4AE /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B206492218B797006EC4AE /* CommentViewController.swift */; };
+		79B2064C2218B797006EC4AE /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B2064A2218B797006EC4AE /* CommentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		79B2064122189453006EC4AE /* ParentTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTabViewController.swift; sourceTree = "<group>"; };
 		79B2064322189B4E006EC4AE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		79B206462218A1E1006EC4AE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		79B206492218B797006EC4AE /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		79B2064A2218B797006EC4AE /* CommentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
 		9470DE86FD8C8C6523E12443 /* Pods_StreamLabsAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamLabsAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9820A1A6C55DE798B8C480 /* Pods-StreamLabsAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamLabsAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamLabsAssignment/Pods-StreamLabsAssignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +107,7 @@
 		792AB5E1221803F2006401EE /* StreamLabsAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				79B206482218B779006EC4AE /* XIBs */,
 				79B206452218A1D3006EC4AE /* Extension */,
 				792AB5EE221803F4006401EE /* Info.plist */,
 				79B2062422183E93006EC4AE /* Assets.xcassets */,
@@ -155,6 +160,7 @@
 		79B2062B221840A1006EC4AE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				79B206492218B797006EC4AE /* CommentViewController.swift */,
 				79B2060B22183CD6006EC4AE /* FeedViewController.swift */,
 				79B2060722183CC7006EC4AE /* FeedPageViewController.swift */,
 				79B2063722187B94006EC4AE /* ProfileViewController.swift */,
@@ -205,6 +211,14 @@
 				79B206462218A1E1006EC4AE /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		79B206482218B779006EC4AE /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				79B2064A2218B797006EC4AE /* CommentViewController.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		B3B70FB2D356DB61E87958B9 /* Pods */ = {
@@ -285,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B2064C2218B797006EC4AE /* CommentViewController.xib in Resources */,
 				79B2061F22183D0A006EC4AE /* LaunchScreen.storyboard in Resources */,
 				79B2062522183E93006EC4AE /* Assets.xcassets in Resources */,
 				79B2062022183D0A006EC4AE /* Main.storyboard in Resources */,
@@ -347,6 +362,7 @@
 				79B2062822183FB4006EC4AE /* Feed.swift in Sources */,
 				79B2061C22183CE6006EC4AE /* Connection.swift in Sources */,
 				79B206472218A1E1006EC4AE /* UIViewController+Extension.swift in Sources */,
+				79B2064B2218B797006EC4AE /* CommentViewController.swift in Sources */,
 				79B2063A22187C49006EC4AE /* CircleImageView.swift in Sources */,
 				79B2063822187B94006EC4AE /* ProfileViewController.swift in Sources */,
 				79B2062222183DB0006EC4AE /* AppDelegate.swift in Sources */,

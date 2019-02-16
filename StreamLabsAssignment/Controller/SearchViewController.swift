@@ -11,7 +11,10 @@ import UIKit
 class SearchViewController: UIViewController {
 
     
-    var images = ["thor","captain-america","deadpool","thanos","ironman","spiderman","blackwidow","loki","shuri","drax","war_machine"]
+    var images = ["thor","captain-america","deadpool","thanos","ironman","spiderman",
+                  "blackwidow","loki","shuri","drax","war_machine","thanos","ironman","spiderman",
+                  "blackwidow","loki","shuri","drax","war_machine"
+    ]
     
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
