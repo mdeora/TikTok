@@ -12,7 +12,7 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var imageSet =  ["hulk-1","venom","toronto","music","love","toronto","","hulk"]
+    var imageSet =  ["hulk-1","venom","toronto","music","thanos","toronto","venom","hulk-1"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

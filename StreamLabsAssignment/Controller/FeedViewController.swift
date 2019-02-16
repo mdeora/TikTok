@@ -34,6 +34,17 @@ class FeedViewController: AVPlayerViewController, StoryboardScene {
     }
     
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+         player?.pause()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        player?.play()
+    }
+    
+    
     func play() {
         player?.play()
     }

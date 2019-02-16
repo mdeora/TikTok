@@ -22,9 +22,7 @@ class FeedPageViewController: UIPageViewController, FeedPageView {
         let viewController = FeedViewController.instantiate(feed: feed, andIndex: 0, isPlaying: true) as! FeedViewController
         setViewControllers([viewController], direction: .forward, animated: false, completion: nil)
     }
-}
-
-extension FeedPageViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
@@ -32,7 +30,9 @@ extension FeedPageViewController {
         presenter = FeedPagePresenter(view: self)
         presenter.viewDidLoad()
     }
+    
 }
+
 
 extension FeedPageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
