@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aes-J1-tLC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="q1v-Zt-qWT">
+            <objects>
+                <viewController id="aes-J1-tLC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cwa-Gs-loF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Streamlabs_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ytr-oN-KkM">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ytr-oN-KkM" firstAttribute="centerX" secondItem="cwa-Gs-loF" secondAttribute="centerX" id="QFj-MB-qbg"/>
+                            <constraint firstItem="Ytr-oN-KkM" firstAttribute="centerY" secondItem="cwa-Gs-loF" secondAttribute="centerY" id="wbO-MS-KJS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cdA-cc-hjX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMv-U3-Ybw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Streamlabs_logo" width="300" height="300"/>
+    </resources>
+</document>

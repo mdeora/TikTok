@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3gI-su-aL6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+    </dependencies>
+    <scenes>
+        <!--Feed Page View Controller-->
+        <scene sceneID="FnS-2F-LEM">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="currentContext" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="3gI-su-aL6" customClass="FeedPageViewController" customModule="StreamLabsAssignment" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TsT-4N-VE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="-65"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="kRk-qN-8W0">
+            <objects>
+                <avPlayerViewController storyboardIdentifier="FeedViewController" videoGravity="AVLayerVideoGravityResizeAspect" id="5ri-qs-96C" customClass="FeedViewController" customModule="StreamLabsAssignment" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEB-ea-Hed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="-65"/>
+        </scene>
+    </scenes>
+</document>

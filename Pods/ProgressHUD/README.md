@@ -1,6 +1,6 @@
-[![I am available for hire](http://relatedcode.com/github/header10.png)](http://relatedcode.com)
+[![iOS Messenger](http://relatedcode.com/github/header12.png)](http://github.com/relatedcode/Messenger)
 
-## WHAT'S NEW IN 2.51
+## WHAT'S NEW IN 2.4
 
 - General improvements
 
@@ -50,7 +50,7 @@ ProgressHUD is a lightweight and easy-to-use HUD for iOS (written in Objective-C
 [ProgressHUD dismiss];
 ```
 
-## CUSTOMIZATION
+## SHEMES
 
 You can customize the color, font and image options using the following methods:
 

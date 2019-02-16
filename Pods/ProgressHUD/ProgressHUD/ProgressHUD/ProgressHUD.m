@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Related Code - http://relatedcode.com
+// Copyright (c) 2016 Related Code - http://relatedcode.com
 //
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -328,7 +328,7 @@
 	CGPoint center = CGPointMake(screen.size.width/2, (screen.size.height-heightKeyboard)/2);
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	[UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-		self->toolbarHUD.center = CGPointMake(center.x, center.y);
+		toolbarHUD.center = CGPointMake(center.x, center.y);
 	} completion:nil];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	if (viewBackground != nil) viewBackground.frame = window.frame;
@@ -378,8 +378,8 @@
 
 		UIViewAnimationOptions options = UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseOut;
 		[UIView animateWithDuration:0.15 delay:0 options:options animations:^{
-			self->toolbarHUD.transform = CGAffineTransformScale(self->toolbarHUD.transform, 1/1.4, 1/1.4);
-			self->toolbarHUD.alpha = 1;
+			toolbarHUD.transform = CGAffineTransformScale(toolbarHUD.transform, 1/1.4, 1/1.4);
+			toolbarHUD.alpha = 1;
 		} completion:nil];
 	}
 }
@@ -392,8 +392,8 @@
 	{
 		UIViewAnimationOptions options = UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseIn;
 		[UIView animateWithDuration:0.15 delay:0 options:options animations:^{
-			self->toolbarHUD.transform = CGAffineTransformScale(self->toolbarHUD.transform, 0.7, 0.7);
-			self->toolbarHUD.alpha = 0;
+			toolbarHUD.transform = CGAffineTransformScale(toolbarHUD.transform, 0.7, 0.7);
+			toolbarHUD.alpha = 0;
 		}
 		completion:^(BOOL finished) {
 			[self hudDestroy];
