@@ -54,6 +54,7 @@ class FeedFetcher: FeedFetchProtocol {
         do {
             feeds = try JSONDecoder().decode([Feed].self, from: data)
         } catch {
+            
             feeds = []
         }
         self.delegate?.feedFetchService(self, didFetchFeeds: feeds, withError: nil)
